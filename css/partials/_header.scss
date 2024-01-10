@@ -1,0 +1,40 @@
+.encabezado{
+    background-color: #f1ccc4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    .logo{
+        width: 9rem;
+        margin-right: 1.5rem;
+    }
+
+    .navegacion{
+        background-color: #f1ccc4;
+        padding: 0rem;
+
+        .menu{
+            background-color: #f1ccc4;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            gap: 1rem;
+
+            .menuItem{
+                font-family: 'Nunito', sans-serif;
+                padding: 0rem 1.5rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+

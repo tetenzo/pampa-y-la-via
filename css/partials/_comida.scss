@@ -1,0 +1,38 @@
+.comitop{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "sangu sangu hambur lenteja"
+    "sangu sangu pollov lenteja";
+}
+
+.sangu{
+    grid-area: sangu;
+    width: 100%;
+    height: auto;
+}
+
+.hambur{
+    grid-area: hambur;
+    width: 100%;
+    height: auto;
+}
+
+.parriDos{
+    grid-area: parriDos;
+    width: 100%;
+    height: auto;
+}
+
+.pollov{
+    grid-area: pollov;
+    width: 100%;
+    height: auto;
+}
+
+.lenteja{
+    grid-area: lenteja;
+    width: 100%;
+    height: auto;
+}

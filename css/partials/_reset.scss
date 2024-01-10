@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, dl, ol, ul{
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover{
+    color:bisque;
+}
+
+.contenedor{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}

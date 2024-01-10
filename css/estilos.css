@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Nunito:wght@200;300&family=Train+One&family=Urbanist:wght@200;300;400;500&family=Whisper&display=swap");
+@font-face {
+  font-family: "Nunito";
+  src: url("../font/Nunito-Light.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, dl, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  color: bisque;
+}
+
+.contenedor {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+.encabezado {
+  background-color: #f1ccc4;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.encabezado .logo {
+  width: 9rem;
+  margin-right: 1.5rem;
+}
+.encabezado .navegacion {
+  background-color: #f1ccc4;
+  padding: 0rem;
+}
+.encabezado .navegacion .menu {
+  background-color: #f1ccc4;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+}
+.encabezado .navegacion .menu .menuItem {
+  font-family: "Nunito", sans-serif;
+  padding: 0rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.inPic {
+  background-color: #F5EAE9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+.inPic .inIzq {
+  flex: 1;
+  margin: 3rem;
+}
+.inPic .inIzq .inTitle {
+  color: #ba7f7a;
+  font-family: "Lobster Two";
+  font-size: 3.5rem;
+  text-align: center;
+}
+.inPic .inIzq .inFr {
+  color: #403739;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  padding-inline: 2rem;
+}
+.inPic .inIzq .inTxt {
+  font-family: "Nunito", sans-serif;
+  margin-top: 0.9rem;
+  font-size: 1.1rem;
+  padding-inline: 2rem;
+  text-indent: 1rem;
+}
+.inPic .parriUno {
+  flex: 2;
+  margin: 2rem 3rem;
+  width: 50rem;
+  border-radius: 30px;
+}
+
+.nosTop {
+  display: flex;
+  background-color: #665353;
+}
+
+.nosPampa {
+  width: 70rem;
+}
+
+.comitop {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "sangu sangu hambur lenteja" "sangu sangu pollov lenteja";
+}
+
+.sangu {
+  grid-area: sangu;
+  width: 100%;
+  height: auto;
+}
+
+.hambur {
+  grid-area: hambur;
+  width: 100%;
+  height: auto;
+}
+
+.parriDos {
+  grid-area: parriDos;
+  width: 100%;
+  height: auto;
+}
+
+.pollov {
+  grid-area: pollov;
+  width: 100%;
+  height: auto;
+}
+
+.lenteja {
+  grid-area: lenteja;
+  width: 100%;
+  height: auto;
+}
+
+.delRes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer {
+  background-color: #403739;
+}
+
+.pietxt {
+  font-size: 0.9rem;
+  padding: 1rem 0rem 0.4rem 0rem;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  color: gray;
+}
+
+.pie {
+  padding-bottom: 1rem;
+  list-style-type: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+@media (max-width: 1360px) {
+  .parriUno {
+    width: 40rem;
+  }
+}
+@media (max-width: 990px) {
+  .encabezado {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 450px) {
+  .encabezado {
+    position: initial;
+  }
+  .logo {
+    width: 7rem;
+  }
+  .inPic {
+    position: relative;
+    background: none;
+    padding: 0.7rem;
+    size: 100vh;
+  }
+  .inIzq {
+    width: 20rem;
+    margin: 0rem;
+    padding: 5rem 3rem;
+    text-align: center;
+  }
+  .fueguito:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url("../img/fueguito.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  .parriUno {
+    display: none;
+  }
+}/*# sourceMappingURL=estilos.css.map */
