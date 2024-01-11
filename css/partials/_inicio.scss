@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 2.5rem;
+    gap: 2rem;
+    padding-block: 1.5rem;
 
     .inIzq {
       flex: 1;
@@ -35,8 +36,8 @@
     }
     .parriUno {
       flex: 2;
-      margin: 2rem 3rem;
-      width: 50rem;
+      margin: 2rem 1rem;
+      width: 60rem;
       border-radius: 30px;
     }
   }
