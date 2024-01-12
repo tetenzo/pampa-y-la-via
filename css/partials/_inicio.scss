@@ -4,17 +4,66 @@
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
-    padding-block: 1.5rem;
+    padding-block: 1.6rem;
+
+    @media (max-width:1300px){
+      gap:2.5rem;
+    }
+
+    @media (max-width:1150px){
+      padding-block: 2rem;
+    }
+
+    @media (max-width:1000px){
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @media (max-width:450px){
+      position: relative;
+      background: none;
+      padding: 0.7rem;
+      size: 100vh;
+    }
 
     .inIzq {
       flex: 1;
       margin: 3rem;
+
+      @media (max-width:1300px){
+        margin: 2rem;
+      }
+
+      @media (max-width:1170px){
+        margin: 1.5rem 0.5rem;
+        padding-block: 2rem;
+      }
+
+      @media (max-width:1000px){
+        margin-bottom: 0.5rem;
+        padding-block: 0.5rem;
+      }
+
+      @media (max-width:450px){
+        width: 20rem;
+        margin-block: 1.5rem;
+        padding: 5rem 2.5rem;
+        text-align: center;
+      }
 
       .inTitle {
         color: #ba7f7a;
         font-family: "Lobster Two";
         font-size: 3.5rem;
         text-align: center;
+
+        @media (max-width:1350px){
+          font-size: 3rem;
+        }
+
+        @media (max-width:1200px){
+          font-size: 2.7rem;
+        }
       }
       
       .inFr {
@@ -24,6 +73,16 @@
         margin-top: 1rem;
         font-size: 1.25rem;
         padding-inline: 2rem;
+
+        @media (max-width:1400px){
+          font-size: 1.1rem;
+        }
+
+        @media (max-width:1200px){
+          margin-top: 0.7rem;
+          font-size: 1rem;
+          padding-inline: 1.2rem;
+        }
       }
       
       .inTxt {
@@ -32,6 +91,29 @@
         font-size: 1.1rem;
         padding-inline: 2rem;
         text-indent: 1rem;
+
+        @media (max-width:1300px){
+          font-size: 1.05rem;
+          padding-inline: 1rem;
+        }
+
+        @media (max-width:1200px){
+          font-size: 0.95rem;
+          padding-inline: 0rem;
+
+        }
+        @media (max-width:1000px){
+          padding-inline: 8rem;
+          text-align: center;
+        }
+
+        @media (max-width:800px){
+          padding-inline: 4rem;
+        }
+
+        @media (max-width:600px){
+          padding-inline: 2rem;
+        }
       }
     }
     .parriUno {
@@ -39,6 +121,43 @@
       margin: 2rem 1rem;
       width: 60rem;
       border-radius: 30px;
+
+      @media (max-width:1450px){
+        width: 55rem;
+        margin: 2.2rem 0rem;
+      }
+
+      @media (max-width:1350px){
+        width: 50rem;
+      }
+
+      @media (max-width:1150px){
+        width: 45rem;
+      }
+
+      @media (max-width:1000px){
+        margin-top: 0rem;
+      }
+
+      @media (max-width:850px){
+        width: 40rem;
+      }
+
+      @media (max-width:700px){
+        width: 35rem;
+      }
+
+      @media (max-width:600px){
+        width: 32rem;
+      }
+
+      @media (max-width:540px){
+        width: 26rem;
+      }
+
+      @media (max-width:450px){
+        display: none;
+      }
     }
   }
   
