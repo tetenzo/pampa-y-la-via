@@ -31,7 +31,6 @@ a:hover {
 
 .color {
   background-color: #F5EAE9;
-  size: 100vh;
 }
 
 .encabezado {
@@ -99,13 +98,22 @@ a:hover {
     padding-block: 2rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .inPic {
     flex-direction: column;
+    gap: 4.5rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 800px) {
+  .inPic {
+    padding-block: 3rem;
     gap: 1rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 455px) {
   .inPic {
     position: relative;
     background: none;
@@ -128,17 +136,17 @@ a:hover {
     padding-block: 2rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .inPic .inIzq {
     margin-bottom: 0.5rem;
     padding-block: 0.5rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 455px) {
   .inPic .inIzq {
     width: 20rem;
     margin-block: 1.5rem;
-    padding: 5rem 2.5rem;
+    padding: 5.5rem 2.5rem;
     text-align: center;
   }
 }
@@ -197,9 +205,9 @@ a:hover {
     padding-inline: 0rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .inPic .inIzq .inTxt {
-    padding-inline: 8rem;
+    padding-inline: 7rem;
     text-align: center;
   }
 }
@@ -235,32 +243,38 @@ a:hover {
     width: 45rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .inPic .parriUno {
+    width: 53rem;
     margin-top: 0rem;
+  }
+}
+@media (max-width: 950px) {
+  .inPic .parriUno {
+    width: 49rem;
   }
 }
 @media (max-width: 850px) {
   .inPic .parriUno {
-    width: 40rem;
+    width: 43rem;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .inPic .parriUno {
-    width: 35rem;
+    width: 38rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .inPic .parriUno {
-    width: 32rem;
+    width: 33rem;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 550px) {
   .inPic .parriUno {
-    width: 26rem;
+    width: 27rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 455px) {
   .inPic .parriUno {
     display: none;
   }
@@ -275,12 +289,28 @@ a:hover {
   width: 70rem;
 }
 
+.mapa {
+  padding-inline: 8rem;
+}
+
 .comiIn {
   display: flex;
   padding-top: 1.5rem;
   margin-bottom: 3rem;
   gap: 3rem;
   padding-inline: 1.5rem;
+}
+@media (max-width: 700px) {
+  .comiIn {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .comiIn {
+    gap: 0.25rem;
+  }
 }
 .comiIn .parriDos {
   width: 46rem;
@@ -301,6 +331,21 @@ a:hover {
     width: 25rem;
   }
 }
+@media (max-width: 775px) {
+  .comiIn .parriDos {
+    width: 21rem;
+  }
+}
+@media (max-width: 700px) {
+  .comiIn .parriDos {
+    width: 25rem;
+  }
+}
+@media (max-width: 450px) {
+  .comiIn .parriDos {
+    width: 20rem;
+  }
+}
 .comiIn .comiTxt {
   display: flex;
   flex-direction: column;
@@ -310,6 +355,11 @@ a:hover {
 @media (max-width: 900px) {
   .comiIn .comiTxt {
     gap: 1.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .comiIn .comiTxt {
+    gap: 0.5rem;
   }
 }
 .comiIn .comiTxt .comiTitle {
@@ -332,6 +382,11 @@ a:hover {
 @media (max-width: 900px) {
   .comiIn .comiTxt .comiTitle {
     font-size: 1.7rem;
+  }
+}
+@media (max-width: 775px) {
+  .comiIn .comiTxt .comiTitle {
+    font-size: 1.5rem;
   }
 }
 .comiIn .comiTxt .genTxt {
@@ -373,13 +428,18 @@ a:hover {
        column-gap: 1rem;
   row-gap: 1rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .comitop .galeria {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 .comitop .galeria .imagen {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .comitop .galeria .imagen {
+    width: 100%;
+  }
 }
 
 .delRes {
@@ -409,7 +469,7 @@ a:hover {
   gap: 3rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 455px) {
   .fueguito:before {
     content: " ";
     position: absolute;

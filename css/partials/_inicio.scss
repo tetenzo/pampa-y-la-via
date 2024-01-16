@@ -14,12 +14,20 @@
       padding-block: 2rem;
     }
 
-    @media (max-width:1000px){
+    @media (max-width:1050px){
       flex-direction: column;
+      gap: 4.5rem;
+      padding-top: 8rem;
+      padding-bottom: 10rem;
+      justify-content: space-between;
+    }
+
+    @media (max-width:800px){
+      padding-block: 3rem;
       gap: 1rem;
     }
 
-    @media (max-width:450px){
+    @media (max-width:455px){
       position: relative;
       background: none;
       padding: 0.7rem;
@@ -39,15 +47,15 @@
         padding-block: 2rem;
       }
 
-      @media (max-width:1000px){
+      @media (max-width:1050px){
         margin-bottom: 0.5rem;
         padding-block: 0.5rem;
       }
 
-      @media (max-width:450px){
+      @media (max-width:455px){
         width: 20rem;
         margin-block: 1.5rem;
-        padding: 5rem 2.5rem;
+        padding: 5.5rem 2.5rem;
         text-align: center;
       }
 
@@ -102,8 +110,8 @@
           padding-inline: 0rem;
 
         }
-        @media (max-width:1000px){
-          padding-inline: 8rem;
+        @media (max-width:1050px){
+          padding-inline: 7rem;
           text-align: center;
         }
 
@@ -135,27 +143,33 @@
         width: 45rem;
       }
 
-      @media (max-width:1000px){
+      @media (max-width:1050px){
+        width: 53rem;
         margin-top: 0rem;
+        
+      }
+
+      @media (max-width:950px){
+        width: 49rem;
       }
 
       @media (max-width:850px){
-        width: 40rem;
+        width: 43rem;
       }
 
-      @media (max-width:700px){
-        width: 35rem;
+      @media (max-width:750px){
+        width: 38rem;
       }
 
-      @media (max-width:600px){
-        width: 32rem;
+      @media (max-width:650px){
+        width: 33rem;
       }
 
-      @media (max-width:540px){
-        width: 26rem;
+      @media (max-width:550px){
+        width: 27rem;
       }
 
-      @media (max-width:450px){
+      @media (max-width:455px){
         display: none;
       }
     }
