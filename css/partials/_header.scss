@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    z-index: 1000;
 
     @media (max-width:990px){
             justify-content: space-around;
