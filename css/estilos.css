@@ -33,6 +33,13 @@ a:hover {
   background-color: #F5EAE9;
 }
 
+body {
+  background-color: #F5EAE9;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
 .encabezado {
   background-color: #f1ccc4;
   position: sticky;
@@ -449,6 +456,9 @@ a:hover {
 
 .footer {
   background-color: #403739;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .pietxt {
