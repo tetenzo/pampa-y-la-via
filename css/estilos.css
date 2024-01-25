@@ -64,10 +64,14 @@ body {
 .encabezado .logo {
   width: 9rem;
   margin-right: 1.5rem;
+  transition: 0.6s;
+}
+.encabezado .logo:hover {
+  transform: scale(1.05);
 }
 @media (max-width: 450px) {
   .encabezado .logo {
-    width: 7rem;
+    width: 7.5rem;
   }
 }
 .encabezado .navegacion {
@@ -86,6 +90,12 @@ body {
   font-family: "Nunito", sans-serif;
   padding: 0rem 1.5rem;
   font-size: 1.1rem;
+  transition: 0.6s;
+}
+.encabezado .navegacion .menu .menuItem:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+  color: black;
 }
 
 .inPic {
@@ -109,9 +119,9 @@ body {
 @media (max-width: 1050px) {
   .inPic {
     flex-direction: column;
-    gap: 6rem;
-    padding-top: 6rem;
-    padding-bottom: 8rem;
+    gap: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
     justify-content: space-between;
   }
 }
@@ -132,6 +142,10 @@ body {
 .inPic .inIzq {
   flex: 1;
   margin: 3rem;
+  transition: 0.6s;
+}
+.inPic .inIzq:hover {
+  transform: translateX(10px);
 }
 @media (max-width: 1300px) {
   .inPic .inIzq {
@@ -147,15 +161,16 @@ body {
 @media (max-width: 1050px) {
   .inPic .inIzq {
     margin-bottom: 0.5rem;
-    padding-block: 0.5rem;
+    padding-block: 1rem;
   }
 }
 @media (max-width: 455px) {
   .inPic .inIzq {
     width: 20rem;
     margin-block: 1.5rem;
-    padding: 5.5rem 2.5rem;
+    padding: 2rem 2.5rem;
     text-align: center;
+    border-style: none;
   }
 }
 .inPic .inIzq .inTitle {
@@ -172,6 +187,11 @@ body {
 @media (max-width: 1200px) {
   .inPic .inIzq .inTitle {
     font-size: 2.7rem;
+  }
+}
+@media (max-width: 1050px) {
+  .inPic .inIzq .inTitle {
+    font-size: 3rem;
   }
 }
 .inPic .inIzq .inFr {
@@ -192,6 +212,11 @@ body {
     margin-top: 0.7rem;
     font-size: 1rem;
     padding-inline: 1.2rem;
+  }
+}
+@media (max-width: 1050px) {
+  .inPic .inIzq .inFr {
+    font-size: 1.2rem;
   }
 }
 .inPic .inIzq .inTxt {
@@ -215,6 +240,7 @@ body {
 }
 @media (max-width: 1050px) {
   .inPic .inIzq .inTxt {
+    font-size: 1.05rem;
     padding-inline: 7rem;
     text-align: center;
   }
@@ -234,6 +260,10 @@ body {
   margin: 2rem 1rem;
   width: 60rem;
   border-radius: 30px;
+  transition: 0.7s;
+}
+.inPic .parriUno:hover {
+  transform: scale(1.03);
 }
 @media (max-width: 1450px) {
   .inPic .parriUno {
@@ -299,6 +329,7 @@ body {
 
 .mapa {
   padding-inline: 8rem;
+  margin-bottom: 2rem;
 }
 
 .comiIn {
@@ -313,6 +344,7 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 450px) {
@@ -371,7 +403,7 @@ body {
 }
 @media (max-width: 450px) {
   .comiIn .comiTxt {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }
 .comiIn .comiTxt .comiTitle {
@@ -380,6 +412,10 @@ body {
   text-align: center;
   font-family: "Lobster Two";
   font-size: 3rem;
+  transition: 0.6s;
+}
+.comiIn .comiTxt .comiTitle:hover {
+  transform: translateX(10px);
 }
 @media (max-width: 1350px) {
   .comiIn .comiTxt .comiTitle {
@@ -408,6 +444,10 @@ body {
   padding: 1rem;
   font-family: "Nunito", sans-serif;
   font-size: 1.1rem;
+  transition: 0.6s;
+}
+.comiIn .comiTxt .genTxt:hover {
+  transform: translateX(10px);
 }
 @media (max-width: 1100px) {
   .comiIn .comiTxt .genTxt {
@@ -442,7 +482,7 @@ body {
   transition: 1s;
 }
 .comitop .galeria:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 @media (max-width: 500px) {
   .comitop .galeria {
@@ -458,9 +498,77 @@ body {
   }
 }
 
-.delRes {
+.contacto {
+  min-height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.contacto .horario {
+  text-align: center;
+  padding-block: 2rem;
+}
+.contacto .horario .horTitle {
+  font-family: "Lobster Two";
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #D1C2CC;
+  border-radius: 30px;
+}
+.contacto .horario .horOp {
+  padding-top: 1rem;
+  font-family: "Urbanist", sans-serif;
+}
+.contacto .delRes {
+  text-align: center;
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+}
+.contacto .delRes .delResTxt {
+  font-family: "Lobster Two";
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #D1C2CC;
+  border-radius: 30px;
+}
+.contacto .delRes .delResIcono {
+  padding-block: 1rem;
+  transition: 1s;
+}
+.contacto .delRes .delResIcono:hover {
+  transform: scale(1.05);
+}
+.contacto .delRes .delResIcono .delResWa {
+  font-size: 3rem;
+  color: black;
+}
+.contacto .redes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.contacto .redes .redesTxt {
+  font-family: "Lobster Two";
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #D1C2CC;
+  border-radius: 30px;
+}
+.contacto .redes .redesiconos {
+  padding-block: 1rem;
+  transition: 1s;
+}
+.contacto .redes .redesiconos:hover {
+  transform: scale(1.05);
+}
+.contacto .redes .redesiconos .redesIn {
+  font-size: 3rem;
+  color: black;
+  padding-inline: 1rem;
+}
+.contacto .redes .redesiconos .redesFB {
+  font-size: 3rem;
+  color: black;
+  padding-inline: 1rem;
 }
 
 .footer {
@@ -469,16 +577,7 @@ body {
   bottom: 0;
   width: 100%;
 }
-
-.pietxt {
-  font-size: 0.9rem;
-  padding: 1rem 0rem 0.4rem 0rem;
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  color: gray;
-}
-
-.pie {
+.footer .pie {
   padding-bottom: 1rem;
   list-style-type: none;
   font-family: "Nunito", sans-serif;
@@ -486,6 +585,25 @@ body {
   display: flex;
   justify-content: center;
   gap: 3rem;
+  transition: 0.6s;
+}
+.footer .pie:hover {
+  transform: scale(1.06);
+  opacity: 100%;
+  color: black;
+}
+.footer .pietxt {
+  font-size: 0.9rem;
+  padding: 1rem 0rem 0.4rem 0rem;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  color: gray;
+  transition: 0.6s;
+}
+.footer .pietxt:hover {
+  transform: scale(1.06);
+  opacity: 100%;
+  color: black;
 }
 
 @media (max-width: 455px) {

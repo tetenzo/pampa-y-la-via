@@ -16,9 +16,9 @@
 
     @media (max-width:1050px){
       flex-direction: column;
-      gap: 6rem;
-      padding-top: 6rem;
-      padding-bottom: 8rem;
+      gap: 4rem;
+      padding-top: 4rem;
+      padding-bottom: 6rem;
       justify-content: space-between;
     }
 
@@ -38,6 +38,12 @@
       flex: 1;
       margin: 3rem;
 
+      transition: 0.6s;
+
+      &:hover{
+        transform: translateX(10px);
+      }
+
       @media (max-width:1300px){
         margin: 2rem;
       }
@@ -49,14 +55,15 @@
 
       @media (max-width:1050px){
         margin-bottom: 0.5rem;
-        padding-block: 0.5rem;
+        padding-block: 1rem;
       }
 
       @media (max-width:455px){
         width: 20rem;
         margin-block: 1.5rem;
-        padding: 5.5rem 2.5rem;
+        padding: 2rem 2.5rem;
         text-align: center;
+        border-style: none;
       }
 
       .inTitle {
@@ -71,6 +78,10 @@
 
         @media (max-width:1200px){
           font-size: 2.7rem;
+        }
+
+        @media (max-width:1050px){
+          font-size: 3rem;
         }
       }
       
@@ -90,6 +101,10 @@
           margin-top: 0.7rem;
           font-size: 1rem;
           padding-inline: 1.2rem;
+        }
+
+        @media (max-width:1050px){
+          font-size: 1.2rem;
         }
       }
       
@@ -111,6 +126,7 @@
 
         }
         @media (max-width:1050px){
+          font-size: 1.05rem;
           padding-inline: 7rem;
           text-align: center;
         }
@@ -129,6 +145,12 @@
       margin: 2rem 1rem;
       width: 60rem;
       border-radius: 30px;
+
+      transition: 0.7s;
+
+      &:hover{
+        transform: scale(1.03);
+    }
 
       @media (max-width:1450px){
         width: 55rem;
