@@ -321,14 +321,36 @@ body {
 .nosTop {
   display: flex;
   background-color: #665353;
+  gap: 2rem;
 }
-
-.nosPampa {
+.nosTop .nosPampa {
   width: 70rem;
 }
+@media (max-width: 1450px) {
+  .nosTop .nosPampa {
+    width: 40rem;
+  }
+}
+.nosTop .nosTopDer {
+  padding: 1.5rem;
+}
+.nosTop .nosTopDer .nosTitle {
+  padding-bottom: 0.5rem;
+  font-family: "Lobster Two";
+}
+.nosTop .nosTopDer .nosSec {
+  padding-bottom: 0.5rem;
+  font-family: "Urbanist", sans-serif;
+}
+.nosTop .nosTopDer .ubiIcon {
+  font-size: 1.5rem;
+}
 
-.mapa {
-  padding-inline: 8rem;
+.ubicacion {
+  display: flex;
+  justify-content: center;
+}
+.ubicacion .mapa {
   margin-bottom: 2rem;
 }
 
@@ -443,7 +465,7 @@ body {
   text-align: center;
   padding: 1rem;
   font-family: "Nunito", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   transition: 0.6s;
 }
 .comiIn .comiTxt .genTxt:hover {
@@ -451,7 +473,7 @@ body {
 }
 @media (max-width: 1100px) {
   .comiIn .comiTxt .genTxt {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 900px) {

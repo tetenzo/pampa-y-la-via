@@ -1,13 +1,44 @@
 .nosTop{
     display: flex;
     background-color: #665353;
+    gap: 2rem;
+
+    .nosPampa{
+        width: 70rem;
+
+        @media (max-width:1450px){
+            width: 40rem;
+
+        }
+    }
+
+    .nosTopDer{
+        padding: 1.5rem;
+
+        .nosTitle{
+            padding-bottom: 0.5rem;
+            font-family: 'Lobster Two' ;
+
+        }
+
+        .nosSec{
+            padding-bottom: 0.5rem;
+            font-family: "Urbanist", sans-serif;
+
+        }
+
+        .ubiIcon{
+            font-size: 1.5rem;
+        }
+    }
 }
 
-.nosPampa{
-    width: 70rem;
+.ubicacion{
+    display: flex;
+    justify-content: center;
+
+    .mapa{
+        margin-bottom: 2rem;
+    }
 }
 
-.mapa{
-    padding-inline: 8rem;
-    margin-bottom: 2rem;
-}
