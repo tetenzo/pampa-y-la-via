@@ -520,6 +520,101 @@ body {
   }
 }
 
+.reservas {
+  margin-top: 1rem;
+  padding-inline: 5rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .reservas {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-inline: 3.5rem;
+  }
+}
+.reservas .lugar {
+  width: 40rem;
+  flex: 1;
+  border-radius: 30px;
+}
+@media (max-width: 1200px) {
+  .reservas .lugar {
+    width: 35rem;
+  }
+}
+@media (max-width: 1000px) {
+  .reservas .lugar {
+    width: 30rem;
+  }
+}
+@media (max-width: 900px) {
+  .reservas .lugar {
+    width: 25rem;
+  }
+}
+@media (max-width: 500px) {
+  .reservas .lugar {
+    width: 20rem;
+  }
+}
+.reservas .reservasTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+.reservas .reservasTxt .rTxtuno {
+  background-color: #D1C2CC;
+  border-radius: 30px;
+  padding-inline: 3rem;
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+}
+@media (max-width: 1100px) {
+  .reservas .reservasTxt .rTxtuno {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 900px) {
+  .reservas .reservasTxt .rTxtuno {
+    font-size: 1.2rem;
+  }
+}
+.reservas .reservasTxt .rTxtdos {
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 1100px) {
+  .reservas .reservasTxt .rTxtdos {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 900px) {
+  .reservas .reservasTxt .rTxtdos {
+    font-size: 1.1rem;
+  }
+}
+
+.diezper {
+  background-color: #D1C2CC;
+  font-family: "Urbanist", sans-serif;
+  padding-inline: 3rem;
+  padding-block: 2rem;
+  margin-block: 2.5rem;
+}
+@media (max-width: 1100px) {
+  .diezper .diezTxt {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 900px) {
+  .diezper .diezTxt {
+    font-size: 1.2rem;
+  }
+}
+
 .contacto {
   min-height: 80vh;
   display: grid;

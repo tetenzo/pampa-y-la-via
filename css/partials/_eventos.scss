@@ -1,0 +1,94 @@
+.reservas{
+    margin-top: 1rem;
+    padding-inline: 5rem;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+
+    @media(max-width:800px){
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-inline: 3.5rem;
+    }
+
+    .lugar{
+        width: 40rem;
+        flex: 1;
+        border-radius: 30px;
+
+        @media (max-width:1200px){
+            width: 35rem;
+        }
+
+        @media (max-width:1000px){
+            width: 30rem;
+        }
+
+        @media (max-width:900px){
+            width: 25rem;
+        }
+
+        @media (max-width:500px){
+            width: 20rem;
+        }
+            
+        }
+
+    .reservasTxt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        flex: 1;
+
+        .rTxtuno{
+            background-color: $colorTexto;
+            border-radius: 30px;
+            padding-inline: 3rem;
+            text-align: center;
+            font-family: "Urbanist", sans-serif;
+
+            @media (max-width:1100px){
+                font-size: 1.4rem;
+            }
+
+            @media (max-width:900px){
+                font-size: 1.2rem;
+            }
+        }
+
+        .rTxtdos{
+            font-family: "Nunito", sans-serif;
+
+            @media (max-width:1100px){
+                font-size: 1.3rem;
+            }
+
+            @media (max-width:900px){
+                font-size: 1.1rem;
+            }
+        }
+
+    }
+}
+
+.diezper{
+    background-color: $colorTexto;
+    font-family: "Urbanist", sans-serif;
+    padding-inline: 3rem;
+    padding-block: 2rem;
+    margin-block: 2.5rem;
+
+    .diezTxt{
+        @media (max-width:1100px){
+            font-size: 1.4rem;
+        }
+
+        @media (max-width:900px){
+            font-size: 1.2rem;
+        }
+
+    }
+
+   
+}
