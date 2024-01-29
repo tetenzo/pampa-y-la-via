@@ -1,14 +1,47 @@
 .nosTop{
     display: flex;
     background-color: #665353;
+    padding-block: 1rem;
+    border-radius: 30px;
     gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+
+    @media (max-width:1000px){
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
 
     .nosPampa{
-        width: 70rem;
+        width: 55rem;
 
-        @media (max-width:1450px){
+        @media (max-width:1350px){
+            width: 50rem;
+        }
+
+        @media (max-width:1250px){
+            width: 45rem;
+        }
+
+        @media (max-width:1100px){
             width: 40rem;
+        }
 
+        @media (max-width:1000px){
+            width: 45rem;
+            border-radius: 30px;
+        }
+
+        @media (max-width:800px){
+            width: 35rem;
+        }
+
+        @media (max-width:650px){
+            width: 30rem;
+        }
+
+        @media (max-width:520px){
+            width: 21rem;
         }
     }
 
@@ -16,29 +49,93 @@
         padding: 1.5rem;
 
         .nosTitle{
-            padding-bottom: 0.5rem;
+            padding-bottom: 1.5rem;
             font-family: 'Lobster Two' ;
+
+            @media(max-width:1200px){
+                font-size: 2.2rem;
+            }
+
+            @media (max-width:1000px){
+                text-align: center;
+            }
+
+            @media (max-width:650px){
+                font-size: 2rem;
+            }
+    
 
         }
 
         .nosSec{
-            padding-bottom: 0.5rem;
             font-family: "Urbanist", sans-serif;
 
-        }
+            @media(max-width:1200px){
+                font-size: 1.5rem;
+            }
 
-        .ubiIcon{
-            font-size: 1.5rem;
+            @media (max-width:650px){
+                font-size: 1.25rem;
+            }
         }
-    }
+     }
 }
 
 .ubicacion{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
+    background-color: $colorTexto;
+    border-radius: 30px;
 
     .mapa{
-        margin-bottom: 2rem;
+        margin-block: 2rem;
+
+        .mapouter{
+            position: relative;
+            text-align: right;
+            height: 560px;
+            width: 800px;
+
+            @media (max-width:900px){
+                height: 474px;
+                width: 650px;
+            }
+
+            @media (max-width:750px){
+                height: 418px;
+                width: 500px;
+            }
+
+            @media (max-width:600px){
+                height: 362px;
+                width: 350px;
+            }
+                
+            
+        }
+
+        .gmap_canvas{
+            overflow: hidden;
+            background: none;
+            height: 560px;
+            width: 800px;
+
+            @media (max-width:900px){
+                height: 474px;
+                width: 650px;
+            }
+
+            @media (max-width:750px){
+                height: 418px;
+                width: 500px;
+            }
+
+            @media (max-width:600px){
+                height: 362px;
+                width: 350px;
+            }
+        }
     }
 }
-

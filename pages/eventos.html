@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="../img/pampita.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -44,14 +46,16 @@
 
     <main>
         <section class="contenedor reservas">
+          <div class="animate__animated animate__bounceInLeft">
             <img class="lugar" alt="Lugar en Pampa y la Vía" src="../img/lugar.jpeg">
-            <div class="reservasTxt">
-              <h3 class="rTxtuno">Horario de atención: jueves a domingo de 21:00 a 01:00</h3>
-              <h4 class="rTxtdos">Las reservas pueden hacerse en el día mientras haya disponibilidad. Sin embargo, la parrilla sólo se enciende los días viernes y sábado. Para una reserva de asado fuera de los días mencionados, la anticipación deberá ser de al menos 24 horas.</h4>
-            </div>
+          </div>
+          <div class="reservasTxt animate__animated animate__bounceInDown">
+            <h3 class="rTxtuno ">Horario de atención: jueves a domingo de 21:00 a 01:00</h3>
+            <h4 class="rTxtdos animate__animated">Las reservas pueden hacerse en el día mientras haya disponibilidad. Sin embargo, la parrilla sólo se enciende los días viernes y sábado. Para una reserva de asado fuera de los días mencionados, la anticipación deberá ser de al menos 24 horas.</h4>
+          </div>
         </section>
-        <section class="contenedor diezper">
-          <h4>¿Sabías que tenemos opciones con precios especiales para grupos de 10 o más personas? Para consultas, comunicarse con el número de Whatsapp disponible en contacto.</h4>
+        <section class="contenedor diezper" data-aos="flip-up">
+          <h4 class="diezTxt">¿Sabías que tenemos opciones con precios especiales para grupos de 10 o más personas? Para consultas, comunicarse con el número de Whatsapp disponible en contacto.</h4>
         </section>
             
         
@@ -59,7 +63,7 @@
 
     <footer class="footer">
         <nav>
-            <h5 class="pietxt"><a href="./pages/contacto.html">Contacto</a></h5>
+            <h5 class="pietxt"><a href="./contacto.html">Contacto</a></h5>
             <ul class="pie">
                 <li><a href="https://www.instagram.com/pampaylavia.gv/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="https://wa.me/5493388674757" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
@@ -69,6 +73,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

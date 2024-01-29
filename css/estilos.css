@@ -321,37 +321,151 @@ body {
 .nosTop {
   display: flex;
   background-color: #665353;
+  padding-block: 1rem;
+  border-radius: 30px;
   gap: 2rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .nosTop {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
 }
 .nosTop .nosPampa {
-  width: 70rem;
+  width: 55rem;
 }
-@media (max-width: 1450px) {
+@media (max-width: 1350px) {
+  .nosTop .nosPampa {
+    width: 50rem;
+  }
+}
+@media (max-width: 1250px) {
+  .nosTop .nosPampa {
+    width: 45rem;
+  }
+}
+@media (max-width: 1100px) {
   .nosTop .nosPampa {
     width: 40rem;
+  }
+}
+@media (max-width: 1000px) {
+  .nosTop .nosPampa {
+    width: 45rem;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .nosTop .nosPampa {
+    width: 35rem;
+  }
+}
+@media (max-width: 650px) {
+  .nosTop .nosPampa {
+    width: 30rem;
+  }
+}
+@media (max-width: 520px) {
+  .nosTop .nosPampa {
+    width: 21rem;
   }
 }
 .nosTop .nosTopDer {
   padding: 1.5rem;
 }
 .nosTop .nosTopDer .nosTitle {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
   font-family: "Lobster Two";
 }
+@media (max-width: 1200px) {
+  .nosTop .nosTopDer .nosTitle {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .nosTop .nosTopDer .nosTitle {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .nosTop .nosTopDer .nosTitle {
+    font-size: 2rem;
+  }
+}
 .nosTop .nosTopDer .nosSec {
-  padding-bottom: 0.5rem;
   font-family: "Urbanist", sans-serif;
 }
-.nosTop .nosTopDer .ubiIcon {
-  font-size: 1.5rem;
+@media (max-width: 1200px) {
+  .nosTop .nosTopDer .nosSec {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .nosTop .nosTopDer .nosSec {
+    font-size: 1.25rem;
+  }
 }
 
 .ubicacion {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
+  background-color: #D1C2CC;
+  border-radius: 30px;
 }
 .ubicacion .mapa {
-  margin-bottom: 2rem;
+  margin-block: 2rem;
+}
+.ubicacion .mapa .mapouter {
+  position: relative;
+  text-align: right;
+  height: 560px;
+  width: 800px;
+}
+@media (max-width: 900px) {
+  .ubicacion .mapa .mapouter {
+    height: 474px;
+    width: 650px;
+  }
+}
+@media (max-width: 750px) {
+  .ubicacion .mapa .mapouter {
+    height: 418px;
+    width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .ubicacion .mapa .mapouter {
+    height: 362px;
+    width: 350px;
+  }
+}
+.ubicacion .mapa .gmap_canvas {
+  overflow: hidden;
+  background: none;
+  height: 560px;
+  width: 800px;
+}
+@media (max-width: 900px) {
+  .ubicacion .mapa .gmap_canvas {
+    height: 474px;
+    width: 650px;
+  }
+}
+@media (max-width: 750px) {
+  .ubicacion .mapa .gmap_canvas {
+    height: 418px;
+    width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .ubicacion .mapa .gmap_canvas {
+    height: 362px;
+    width: 350px;
+  }
 }
 
 .comiIn {
@@ -430,6 +544,7 @@ body {
 }
 .comiIn .comiTxt .comiTitle {
   background-color: #D1C2CC;
+  padding: 0.5rem;
   border-radius: 1.5rem;
   text-align: center;
   font-family: "Lobster Two";
@@ -527,7 +642,7 @@ body {
   gap: 2.5rem;
   justify-content: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
   .reservas {
     flex-direction: column-reverse;
     align-items: center;
@@ -538,6 +653,10 @@ body {
   width: 40rem;
   flex: 1;
   border-radius: 30px;
+  transition: 0.7s;
+}
+.reservas .lugar:hover {
+  transform: scale(1.03);
 }
 @media (max-width: 1200px) {
   .reservas .lugar {
@@ -572,19 +691,35 @@ body {
   padding-inline: 3rem;
   text-align: center;
   font-family: "Urbanist", sans-serif;
+  transition: 0.7s;
+}
+.reservas .reservasTxt .rTxtuno:hover {
+  transform: scale(1.03);
 }
 @media (max-width: 1100px) {
   .reservas .reservasTxt .rTxtuno {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .reservas .reservasTxt .rTxtuno {
+    padding-block: 1rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 500px) {
+  .reservas .reservasTxt .rTxtuno {
+    padding-block: 0.5rem;
     font-size: 1.2rem;
   }
 }
 .reservas .reservasTxt .rTxtdos {
   font-family: "Nunito", sans-serif;
+  text-indent: 0.5rem;
+  transition: 0.7s;
+}
+.reservas .reservasTxt .rTxtdos:hover {
+  transform: scale(1.03);
 }
 @media (max-width: 1100px) {
   .reservas .reservasTxt .rTxtdos {
@@ -603,6 +738,10 @@ body {
   padding-inline: 3rem;
   padding-block: 2rem;
   margin-block: 2.5rem;
+  transition: 0.7s;
+}
+.diezper:hover {
+  transform: scale(1.03);
 }
 @media (max-width: 1100px) {
   .diezper .diezTxt {
@@ -616,7 +755,7 @@ body {
 }
 
 .contacto {
-  min-height: 80vh;
+  min-height: 75vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -630,6 +769,11 @@ body {
   padding-bottom: 0.5rem;
   background-color: #D1C2CC;
   border-radius: 30px;
+}
+@media (max-width: 500px) {
+  .contacto .horario .horTitle {
+    font-size: 2rem;
+  }
 }
 .contacto .horario .horOp {
   padding-top: 1rem;
@@ -646,6 +790,11 @@ body {
   padding-bottom: 0.5rem;
   background-color: #D1C2CC;
   border-radius: 30px;
+}
+@media (max-width: 500px) {
+  .contacto .delRes .delResTxt {
+    font-size: 2rem;
+  }
 }
 .contacto .delRes .delResIcono {
   padding-block: 1rem;
@@ -669,6 +818,11 @@ body {
   padding-bottom: 0.5rem;
   background-color: #D1C2CC;
   border-radius: 30px;
+}
+@media (max-width: 500px) {
+  .contacto .redes .redesTxt {
+    font-size: 2rem;
+  }
 }
 .contacto .redes .redesiconos {
   padding-block: 1rem;
