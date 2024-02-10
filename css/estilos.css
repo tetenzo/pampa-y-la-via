@@ -856,12 +856,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  transition: 0.6s;
-}
-.footer .pie:hover {
-  transform: scale(1.06);
-  opacity: 100%;
-  color: black;
 }
 .footer .pietxt {
   font-size: 0.9rem;
@@ -869,12 +863,6 @@ body {
   font-family: "Nunito", sans-serif;
   text-align: center;
   color: gray;
-  transition: 0.6s;
-}
-.footer .pietxt:hover {
-  transform: scale(1.06);
-  opacity: 100%;
-  color: black;
 }
 
 @media (max-width: 455px) {
